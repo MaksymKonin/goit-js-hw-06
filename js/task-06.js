@@ -5,7 +5,7 @@ let counterValue = 0;
 inputEl.addEventListener("blur", onTargetInputBlur);
 
 function onTargetInputBlur(event) {
-  if (event.currentTarget.value.length === Number(inputLength)) {
+  if (event.currentTarget.value.trim().length === Number(inputLength)) {
     if (inputEl.classList.contains("invalid")) {
       inputEl.classList.remove("invalid");
     }
